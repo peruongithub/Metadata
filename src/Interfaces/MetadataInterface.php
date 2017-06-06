@@ -10,10 +10,9 @@
 
 namespace Trident\Components\Metadata\Interfaces;
 
+use Trident\Components\Property\Interfaces\PropertyProviderInterface;
 
-use Trident\Components\Expression\Expression;
-
-interface MetadataInterface
+interface MetadataInterface extends PropertyProviderInterface
 {
     /**
      * @param MetadataInterface $metadata
@@ -23,8 +22,4 @@ interface MetadataInterface
      * @return array
      */
     public function toArray();
-    /**
-     * @param Expression $expression
-     */
-    public function forAll(Expression $expression);
 }
