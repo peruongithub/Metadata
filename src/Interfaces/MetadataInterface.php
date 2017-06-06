@@ -16,10 +16,11 @@ interface MetadataInterface extends PropertyProviderInterface
 {
     /**
      * @param MetadataInterface $metadata
+     * @return MetadataInterface
      */
-    public function merge(MetadataInterface $metadata);
+    public function merge(MetadataInterface $metadata):MetadataInterface;
     /**
      * @return array
      */
-    public function toArray();
+    public function toArray():array;
 }
