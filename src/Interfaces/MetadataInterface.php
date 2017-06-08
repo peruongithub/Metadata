@@ -15,11 +15,6 @@ use Trident\Components\Property\Interfaces\PropertyProviderInterface;
 interface MetadataInterface extends PropertyProviderInterface
 {
     /**
-     * @param MetadataInterface $metadata
-     * @return MetadataInterface
-     */
-    public function merge(MetadataInterface $metadata):MetadataInterface;
-    /**
      * @return array
      */
     public function toArray():array;

@@ -17,8 +17,15 @@ interface MetadataProviderInterface
      * @return MetadataInterface
      */
     public function getMetadata():MetadataInterface;
+
     /**
      * @param MetadataInterface $metadata
      */
     public function setMetadata(MetadataInterface $metadata);
+
+    /**
+     * @param MetadataInterface $metadata
+     * @return MetadataInterface
+     */
+    public function merge(MetadataInterface $metadata):MetadataInterface;
 }
